@@ -1,9 +1,8 @@
-* * *
-
+---
 layout: post
 title: MarkDown
-
-## date: 2017-07-20 19:03:24.000000000 +09:00
+date: 2017-07-20 19:03:24.000000000 +09:00
+---
 
 # 一级标题
 
@@ -41,111 +40,113 @@ title: MarkDown
 
 1.  列出所有元素：
 
-        <span class="hljs-bullet">*   </span>无序列表元素 A
+        <span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-bullet"</span>></span>*   <span class="hljs-tag"></<span class="hljs-title">span</span>></span>无序列表元素 A
+    `</pre>
     <span class="hljs-code">        1.  元素 A 的有序子列表</span>
     <span class="hljs-bullet">*   </span>前面加四个空格
     `</pre>
 2.  列表里的多段换行：
     前面必须加四个空格，
     这样换行，整体的格式不会乱
-3.  列表里引用：
-    > 前面空一行
->     仍然需要在 >  前面加四个空格
+3.  列表里引用：> 前面空一行
+>     <pre>`<span class="hljs-prompt">仍然需要在 ></span>  前面加四个空格
+>     `</pre>
 4.  列表里代码段：
-    <pre>` 前面四个空格，之后按代码语法 <span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-escape"</span>></span>``<span class="hljs-tag"></<span class="hljs-title">span</span>></span><span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-escape"</span>></span>` <span class="hljs-tag"></<span class="hljs-title">span</span>></span>书写
-    `</pre>
-    `</pre><pre>` 或者直接空八个，引入代码块
-    `</pre>
+    <pre>`前面四个空格，之后按代码语法 <span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-escape"</span>></span>``<span class="hljs-tag"></<span class="hljs-title">span</span>></span><span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-escape"</span>></span>` <span class="hljs-tag"></<span class="hljs-title">span</span>></span>书写
+    `</pre>`</pre><pre>`或者直接空八个，引入代码块`</pre>
     # 引用
     ## 普通引用
     > 引用文本前使用 [大于号+空格]
->     <pre>`折行可以不加，新起一行都要加上哦
+>     <pre>`<span class="hljs-tag"><<span class="hljs-title">pre</span>></span>`折行可以不加，新起一行都要加上哦
+>     `<span class="hljs-tag"></<span class="hljs-title">pre</span>></span>
 >     `</pre>
-    ## 引用里嵌套引用
-    > 最外层引用
+>     ## 引用里嵌套引用
+>     最外层引用
 > > 多一个 > 嵌套一层引用
 > > > 可以嵌套很多层
-    ## 引用里嵌套代码块
-    > <pre>`同样的，在前面加四个空格形成代码块`</pre><pre>`或者使用 <span class="hljs-escape">``</span><span class="hljs-escape">` </span>形成代码块
->         `</pre>
-    # 粗斜体
-    _斜体文本_    _斜体文本_
-    **粗体文本**    **粗体文本**
-    **_粗斜体文本_**    **_粗斜体文本_**
-    # 表格
-    <table>
-    <thead>
-    <tr>
-    <th>表头一</th>
-    <th>表头2</th>
-    <th>表头3</th>
-    <th>表头4</th>
-    <th>表头5</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
-    </tr>
-    <tr>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
-    </tr>
-    <tr>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
-    </tr>
-    <tr>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
-    </tr>
-    <tr>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
-    </tr>
-    </tbody>
-    </table>
-    # 代码框
-    <pre>`$(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
-    <pre>`alert(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">'hello world'</span></span>);
-    `</pre>
-    });
-    `</pre>
-    <pre>`$(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
-    <pre>`<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-comment"</span>><span class="hljs-comment">//实现左侧导航动画效果</span></span>
-    $(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">".baseUI>li>a"</span></span>).off(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">"click"</span></span>);
-    $(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">".baseUI>li>a"</span></span>).on(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">"click"</span></span>,<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-function"</span>><span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-keyword"</span>>function</span> <span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-params"</span>>()</span> </span>{
-        $(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">".baseUI>li>ul"</span></span>).slideUp();
-        $(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-keyword"</span>><span class="hljs-keyword">this</span></span>).next().slideDown(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-number"</span>><span class="hljs-number">300</span></span>);
-    });
-    <span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-comment"</span>><span class="hljs-comment">//默认收起全部，展示第一个</span></span>
-    $(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">".baseUI>li>ul"</span></span>).slideUp();
-    $(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">".baseUI>li>a"</span></span>).eq(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-number"</span>><span class="hljs-number">0</span></span>).trigger(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">"click"</span></span>);
-    $(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">".baseUI>li>ul>li"</span></span>).off();
-    $(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">".baseUI>li>ul>li"</span></span>).on(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">"click"</span></span>,<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-function"</span>><span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-keyword"</span>>function</span> <span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-params"</span>>()</span> </span>{
-        <span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-keyword"</span>><span class="hljs-keyword">if</span></span>(!$(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-keyword"</span>><span class="hljs-keyword">this</span></span>).hasClass(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">"current"</span></span>)){
-            $(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">".baseUI>li>ul>li"</span></span>).removeClass(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">"current"</span></span>);
-            $(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-keyword"</span>><span class="hljs-keyword">this</span></span>).addClass(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">"current"</span></span>);
-        }
-    });
-    <span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-comment"</span>><span class="hljs-comment">//模拟点击</span></span>
-    $(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">".baseUI>li>ul>li>a"</span></span>).eq(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-number"</span>><span class="hljs-number">0</span></span>).trigger(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">"click"</span></span>);
+> > >     ## 引用里嵌套代码块
+> > >     <pre>`同样的，在前面加四个空格形成代码块`</pre><pre>`或者使用 <span class="hljs-escape">``</span><span class="hljs-escape">` </span>形成代码块
+> > >     <pre>`    `<span class="hljs-tag"></<span class="hljs-title">pre</span>></span>
+> > >     `</pre>
+> > >     # 粗斜体
+> > >     _斜体文本_    _斜体文本_
+> > >     **粗体文本**    **粗体文本**
+> > >     **_粗斜体文本_**    **_粗斜体文本_**
+> > >     # 表格
+> > >     <table>
+> > >     <thead>
+> > >     <tr>
+> > >     <th>表头一</th>
+> > >     <th>表头2</th>
+> > >     <th>表头3</th>
+> > >     <th>表头4</th>
+> > >     <th>表头5</th>
+> > >     </tr>
+> > >     </thead>
+> > >     <tbody>
+> > >     <tr>
+> > >     <td>1</td>
+> > >     <td>1</td>
+> > >     <td>1</td>
+> > >     <td>1</td>
+> > >     <td>1</td>
+> > >     </tr>
+> > >     <tr>
+> > >     <td>1</td>
+> > >     <td>1</td>
+> > >     <td>1</td>
+> > >     <td>1</td>
+> > >     <td>1</td>
+> > >     </tr>
+> > >     <tr>
+> > >     <td>1</td>
+> > >     <td>1</td>
+> > >     <td>1</td>
+> > >     <td>1</td>
+> > >     <td>1</td>
+> > >     </tr>
+> > >     <tr>
+> > >     <td>1</td>
+> > >     <td>1</td>
+> > >     <td>1</td>
+> > >     <td>1</td>
+> > >     <td>1</td>
+> > >     </tr>
+> > >     <tr>
+> > >     <td>1</td>
+> > >     <td>1</td>
+> > >     <td>1</td>
+> > >     <td>1</td>
+> > >     <td>1</td>
+> > >     </tr>
+> > >     </tbody>
+> > >     </table>
+> > >     # 代码框
+> > >     <pre>`$(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+> > >     <pre>`alert(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">'hello world'</span></span>);
+> > >     `</pre>
+> > >     });`</pre>
+> > >     <pre>`$(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+> > >     <pre>`<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-comment"</span>><span class="hljs-comment">//实现左侧导航动画效果</span></span>
+> > >     $(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">".baseUI>li>a"</span></span>).off(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">"click"</span></span>);
+> > >     $(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">".baseUI>li>a"</span></span>).on(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">"click"</span></span>,<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-function"</span>><span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-keyword"</span>>function</span> <span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-params"</span>>()</span> </span>{
+> > >     <pre>`<span class="xml">$(<span class="hljs-tag"><<span class="hljs-title">span</span> <<span class="hljs-attribute">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-keyword"</span>></span>class<span class="hljs-tag"></<span class="hljs-title">span</span>></span>=<span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-string"</span>></span>"hljs-string"<span class="hljs-tag"></<span class="hljs-title">span</span>></span>><span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-string"</span>></span>".baseUI>li>ul"<span class="hljs-tag"></<span class="hljs-title">span</span>></span><span class="hljs-tag"></<span class="hljs-title">span</span>></span>).slideUp();
+> > >     $(<span class="hljs-tag"><<span class="hljs-title">span</span> <<span class="hljs-attribute">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-keyword"</span>></span>class<span class="hljs-tag"></<span class="hljs-title">span</span>></span>=<span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-string"</span>></span>"hljs-keyword"<span class="hljs-tag"></<span class="hljs-title">span</span>></span>><span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-keyword"</span>></span>this<span class="hljs-tag"></<span class="hljs-title">span</span>></span><span class="hljs-tag"></<span class="hljs-title">span</span>></span>).next().slideDown(<span class="hljs-tag"><<span class="hljs-title">span</span> <<span class="hljs-attribute">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-keyword"</span>></span>class<span class="hljs-tag"></<span class="hljs-title">span</span>></span>=<span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-string"</span>></span>"hljs-number"<span class="hljs-tag"></<span class="hljs-title">span</span>></span>><span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-number"</span>></span>300<span class="hljs-tag"></<span class="hljs-title">span</span>></span><span class="hljs-tag"></<span class="hljs-title">span</span>></span>);</span>
+> > >     `</pre>
+> > >     });
+> > >     <span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-comment"</span>><span class="hljs-comment">//默认收起全部，展示第一个</span></span>
+> > >     $(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">".baseUI>li>ul"</span></span>).slideUp();
+> > >     $(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">".baseUI>li>a"</span></span>).eq(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-number"</span>><span class="hljs-number">0</span></span>).trigger(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">"click"</span></span>);
+> > >     $(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">".baseUI>li>ul>li"</span></span>).off();
+> > >     $(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">".baseUI>li>ul>li"</span></span>).on(<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-string"</span>><span class="hljs-string">"click"</span></span>,<span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-function"</span>><span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-keyword"</span>>function</span> <span <span class="hljs-keyword">class</span>=<span class="hljs-string">"hljs-params"</span>>()</span> </span>{
+> > >     <pre>`<span class="xml"><span class="hljs-tag"><<span class="hljs-title">span</span> <<span class="hljs-attribute">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-keyword"</span>></span>class<span class="hljs-tag"></<span class="hljs-title">span</span>></span>=<span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-string"</span>></span>"hljs-keyword"<span class="hljs-tag"></<span class="hljs-title">span</span>></span>><span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-keyword"</span>></span>if<span class="hljs-tag"></<span class="hljs-title">span</span>></span><span class="hljs-tag"></<span class="hljs-title">span</span>></span>(!$(<span class="hljs-tag"><<span class="hljs-title">span</span> <<span class="hljs-attribute">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-keyword"</span>></span>class<span class="hljs-tag"></<span class="hljs-title">span</span>></span>=<span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-string"</span>></span>"hljs-keyword"<span class="hljs-tag"></<span class="hljs-title">span</span>></span>><span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-keyword"</span>></span>this<span class="hljs-tag"></<span class="hljs-title">span</span>></span><span class="hljs-tag"></<span class="hljs-title">span</span>></span>).hasClass(<span class="hljs-tag"><<span class="hljs-title">span</span> <<span class="hljs-attribute">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-keyword"</span>></span>class<span class="hljs-tag"></<span class="hljs-title">span</span>></span>=<span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-string"</span>></span>"hljs-string"<span class="hljs-tag"></<span class="hljs-title">span</span>></span>><span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-string"</span>></span>"current"<span class="hljs-tag"></<span class="hljs-title">span</span>></span><span class="hljs-tag"></<span class="hljs-title">span</span>></span>)){
+> > >         $(<span class="hljs-tag"><<span class="hljs-title">span</span> <<span class="hljs-attribute">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-keyword"</span>></span>class<span class="hljs-tag"></<span class="hljs-title">span</span>></span>=<span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-string"</span>></span>"hljs-string"<span class="hljs-tag"></<span class="hljs-title">span</span>></span>><span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-string"</span>></span>".baseUI>li>ul>li"<span class="hljs-tag"></<span class="hljs-title">span</span>></span><span class="hljs-tag"></<span class="hljs-title">span</span>></span>).removeClass(<span class="hljs-tag"><<span class="hljs-title">span</span> <<span class="hljs-attribute">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-keyword"</span>></span>class<span class="hljs-tag"></<span class="hljs-title">span</span>></span>=<span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-string"</span>></span>"hljs-string"<span class="hljs-tag"></<span class="hljs-title">span</span>></span>><span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-string"</span>></span>"current"<span class="hljs-tag"></<span class="hljs-title">span</span>></span><span class="hljs-tag"></<span class="hljs-title">span</span>></span>);
+> > >         $(<span class="hljs-tag"><<span class="hljs-title">span</span> <<span class="hljs-attribute">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-keyword"</span>></span>class<span class="hljs-tag"></<span class="hljs-title">span</span>></span>=<span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-string"</span>></span>"hljs-keyword"<span class="hljs-tag"></<span class="hljs-title">span</span>></span>><span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-keyword"</span>></span>this<span class="hljs-tag"></<span class="hljs-title">span</span>></span><span class="hljs-tag"></<span class="hljs-title">span</span>></span>).addClass(<span class="hljs-tag"><<span class="hljs-title">span</span> <<span class="hljs-attribute">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-keyword"</span>></span>class<span class="hljs-tag"></<span class="hljs-title">span</span>></span>=<span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-string"</span>></span>"hljs-string"<span class="hljs-tag"></<span class="hljs-title">span</span>></span>><span class="hljs-tag"><<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hljs-string"</span>></span>"current"<span class="hljs-tag"></<span class="hljs-title">span</span>></span><span class="hljs-tag"></<span class="hljs-title">span</span>></span>);
+> > >     }</span>
+> > > 
+> > > });
+> > > &lt;span &lt;span class="hljs-keyword"&gt;class&lt;/span&gt;=&lt;span class="hljs-string"&gt;"hljs-comment"&lt;/span&gt;&gt;&lt;span class="hljs-comment"&gt;//模拟点击&lt;/span&gt;&lt;/span&gt;
+> > > $(&lt;span &lt;span class="hljs-keyword"&gt;class&lt;/span&gt;=&lt;span class="hljs-string"&gt;"hljs-string"&lt;/span&gt;&gt;&lt;span class="hljs-string"&gt;".baseUI&gt;li&gt;ul&gt;li&gt;a"&lt;/span&gt;&lt;/span&gt;).eq(&lt;span &lt;span class="hljs-keyword"&gt;class&lt;/span&gt;=&lt;span class="hljs-string"&gt;"hljs-number"&lt;/span&gt;&gt;&lt;span class="hljs-number"&gt;0&lt;/span&gt;&lt;/span&gt;).trigger(&lt;span &lt;span class="hljs-keyword"&gt;class&lt;/span&gt;=&lt;span class="hljs-string"&gt;"hljs-string"&lt;/span&gt;&gt;&lt;span class="hljs-string"&gt;"click"&lt;/span&gt;&lt;/span&gt;);
 
 });
 
