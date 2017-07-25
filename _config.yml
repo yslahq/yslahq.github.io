@@ -16,7 +16,7 @@
 title: 杨小米
 email: huqing758@163.com
 description: > # this means to ignore newlines until "baseurl:"
-  The Secret Life of Walter Mitty
+  白日梦想家.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
@@ -29,7 +29,7 @@ gems:
   - jekyll-feed
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: red
+cover_color: purple
 
 # The blog button should not be removed.
 blog_button:
