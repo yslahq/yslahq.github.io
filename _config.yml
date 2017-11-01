@@ -18,15 +18,18 @@ email: huqing758@163.com
 description: > # this means to ignore newlines until "baseurl:"
   白日梦想家.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://purpleQing.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /:year/:month/:title/
 twitter_username: jekyllrb
 github_username:  yslahq
 
 # Build settings
-markdown: kramdown
+markdown: rdiscount
 theme: minima
 gems:
   - jekyll-feed
+
+pygments: true
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
 cover_color: purple
@@ -37,8 +40,8 @@ blog_button:
     description: Visit blog
 
 # Navigation buttons in the front page.
-#nav:
-    #- {title: Projects, description: My Projects, url: 'http://project.yslahq.com'}
+nav:
+    - {title: Resume, description: My Resume, url: 'https://yslahq.github.io/resume/'}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
@@ -48,9 +51,7 @@ paginate_path: "page/:num/"
 
 # Social
 social:
-    weibo: 嘿妹哈哈
     github: yslahq
-    zhihu: 胡子
     mail: huqing758@163.com
 
 # Exclude from processing.
