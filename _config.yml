@@ -14,9 +14,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: 杨小米
-email: huqing758@163.com
+subtitle: 做一枚安静的咸鸭蛋，闲的要命，富的流油。
+welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">Talk is cheap,Show me the code.</a>
 description: > # this means to ignore newlines until "baseurl:"
   白日梦想家.
+email: huqing758@163.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:year/:month/:title/
